@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>字体预览</title>
+	<script type="text/javascript">
+		function on_input(event) {
+			let p1 = document.getElementsByClassName('font_show_1')[0];
+			p1.innerText = event.target.value;
+
+		}
+	</script>
+	<style type="text/css">
+		@font-face{
+			font-family: DSZH;
+			src: url('font/【方圆魂心体】斗士之魂.ttf');
+		}
+		.font_show_1{
+			font-family: DSZH;
+		}
+	</style>
+</head>
+<body>
+		<input type="text" name="" oninput="on_input(event)">
+		<div>
+			<p class="font_show_1"></p>
+		</div>
+</body>
+</html>
